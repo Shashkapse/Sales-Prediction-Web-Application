@@ -14,7 +14,7 @@ def not_found(error):
 
 @app.route("/")
 def hello():
-  return "Hello World!"
+  return render_template('index.html')
 
 @app.route("/get_prediction", methods=['POST','OPTIONS'])
 @cross_origin()
